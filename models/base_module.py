@@ -110,6 +110,9 @@ class BaseModule(object):
     self.min_val = getattr(self, 'min_val', -1.0)
     self.max_val = getattr(self, 'max_val', 1.0)
 
+    print('model_name = ', model_name)
+    print('module_name = ', module_name)
+
     # Get paths.
     self.weight_path = get_weight_path(
         f'{model_name}_{module_name}')
